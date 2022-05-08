@@ -1,37 +1,24 @@
-## Welcome to GitHub Pages
+## Weather App
 
-You can use the [editor on GitHub](https://github.com/dumindapriyasad/weather-app/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+### Description
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This is a simple and responsive weather information showing web app built with **HTML**, **Sass**, and **Modern JavaScript**. This will display current weather information in your location, and you can also enter any city in the world to view current weather details for that city.
 
-### Markdown
+When you visit this web app, it will first try to get your location by using your **browser's location details**, and if that fails, it will get your location by using your **IP address** and show weather details based on that location. The app will also change its **background image** based on the **City name**.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Technologies
 
-```markdown
-Syntax highlighted code block
+- HTML
+- Sass
+- JavaScript
+- IP Geolocation API by [ipbase.com](https://ipbase.com/)
+- OpenWeatherMap API by [openweathermap.org](https://openweathermap.org/)
+- Image Service by [unsplash.com](https://unsplash.com/)
 
-# Header 1
-## Header 2
-### Header 3
+### Snapshot
 
-- Bulleted
-- List
+![weather-in-kalutara](https://user-images.githubusercontent.com/95137446/167283014-27ee0611-3554-434f-bd1d-5ce27ff89519.png)
 
-1. Numbered
-2. List
+### Live app
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/dumindapriyasad/weather-app/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[***dumindapriyasad.github.io/weather-app***](https://dumindapriyasad.github.io/weather-app/)

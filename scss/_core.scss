@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+
+// General Style
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include flexbox(column, center, center);
+    height: 100vh;
+    min-height: 600px;
+    font-family: $font-family;
+    font-size: $font-size-default;
+    font-weight: $font-weight-normal;
+    line-height: $line-height-default;
+    color: $font-color-primary;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://source.unsplash.com/random/?city');
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    background: $bg-color-primary;
+    border-radius: 10px;
+    box-shadow: 0 0 3px $bg-color-primary;
+
+    // Search Bar
+    .search {
+        @include flexbox(row, center, center);
+
+        .search-field {
+            @include search-bar-common;
+            width: 100%;
+            border-radius: 10px 0 0 10px;
+
+            &::placeholder {
+                color: $font-color-secondary;
+            }
+        }
+
+        .search-btn {
+            @include search-bar-common;
+            cursor: pointer;
+            border-radius: 0 10px 10px 0;
+        }
+    }
+
+    // Weather Info
+    .weather {
+        margin-top: 20px;
+
+        .section-01 {
+            margin-bottom: 20px;
+
+            .city {
+                font-size: 1.5rem;
+                line-height: $line-height-heading;
+            }
+
+            .date {
+                font-size: .75rem;
+                color: $font-color-secondary;
+            }
+        }
+
+        .section-02 {
+            margin-bottom: 20px;
+
+            .temp {
+                font-size: 2rem;
+                font-weight: $font-weight-medium;
+            }
+
+            .icon-wrapper {
+                @include flexbox(row, flex-start, center);
+
+                .description {
+                    margin-left: 5px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .temp-min-max,
+            .feels {
+                font-size: .75rem;
+                color: $font-color-secondary;
+            }
+        }
+
+        .section-03 {
+            font-size: .9375rem;
+            color: $font-color-third;
+
+            .help-text {
+                margin-top: .75rem;
+                font-size: .6875rem;
+                color: $font-color-secondary;
+            }
+        }
+
+        &.loading {
+            visibility: hidden;
+            overflow: hidden;
+            max-height: 30px;
+            position: relative;
+    
+            &::after {
+                visibility: visible;
+                content: "Loading...";
+                color: $font-color-primary;
+                position: absolute;
+                top: 0;
+                left: 10px;
+            }
+        }
+    }
+}

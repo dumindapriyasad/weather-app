@@ -1,0 +1,18 @@
+// Flexbox
+@mixin flexbox($fd, $jc, $ai) {
+    display: flex;
+    flex-direction: $fd;
+    justify-content: $jc;
+    align-items: $ai;
+}
+
+// Search Bar Common
+@mixin search-bar-common {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-family: inherit;
+    font-size: $font-size-default;
+    color: $font-color-primary;
+    background: $bg-color-secondary;
+}

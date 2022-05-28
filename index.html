@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="dist/images/favicon.png">
+        <title>Weather Report</title>
+        <link rel="stylesheet" href="dist/css/style.css">
+        <!-- ===================================
+        # Weather App
+        # Developed by Duminda Priyasad
+        ==================================== -->
+    </head>
+    <body>
+        <div class="container">
+            <!-- Search Bar -->
+            <div class="search">
+                <input type="text" placeholder="enter any city" class="search-field">
+                <button type="button" class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <!-- Search Bar End -->
+
+            <!-- Weather Info -->
+            <div class="weather loading">
+                <div class="section-01">
+                    <div class="city"></div>
+                    <div class="date"></div>
+                </div>
+
+                <div class="section-02">
+                    <div class="temp"></div>
+                    <div class="icon-wrapper">
+                        <img src="" alt="icon" class="icon">
+                        <div class="description"></div>
+                    </div>
+                    <div class="temp-min-max"><i class="fa-solid fa-arrow-up-long"></i>&nbsp;<span class="max"></span>&emsp;<i class="fa-solid fa-arrow-down-long"></i>&nbsp;<span class="min"></span></div>
+                    <div class="feels"></div>
+                </div>
+
+                <div class="section-03">
+                    <div class="sunrise"></div>
+                    <div class="sunset"></div>
+                    <div class="wind"></div>
+                    <div class="pressure"></div>
+                    <div class="humidity"></div>
+                    <div class="clouds"></div>
+                    <div class="help-text"></div>
+                </div>
+            </div>
+            <!-- Weather Info End -->
+        </div>
+
+        <script src="dist/js/script.js"></script>
+    </body>
+</html>
